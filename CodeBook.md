@@ -23,8 +23,8 @@ cutoff frequency was used. From each window, a vector of features was obtained b
 
 * Subject: A unique indentifier for the participant in the experiments.  Takes integer values 1 through 30.
 * Activity: 1=WALKING, 2=WALKING_UPSTAIRS, 3=WALKING_DOWNSTAIRS, 4=SITTING, 5=STANDING, 6=LAYING
-* 561 measurements recorded for each subject and activity. See *features_info.txt* for information on the names and descriptions of the 
-  measurement variables, how the data was collected and the units of measurement (a copy is available in this repo).
+* 561 measurements recorded for each subject and activity. See [features_info.txt](https://github.com/DSF15/GCD_Project/blob/master/features_info.txt) for information on the names and descriptions of the 
+  measurement variables, how the data was collected and the units of measurement.
 
 
 ## Data Transformations
@@ -32,8 +32,8 @@ cutoff frequency was used. From each window, a vector of features was obtained b
 The following transformations are applied within ```run_analysis.R``` 
 
 * Feature descriptions are added as variable names.
-* Only the mean and standard deviation variables are retained (among the 561 activity measurements).  This is accomplished by searching for the patterns 
-  "mean" or "std" within the labels provided by the researchers.  Features related to "angle" measurements are excluded.
+* Only the mean and standard deviation measurement variables are retained (79 of 561 variables).  This is accomplished by searching for the patterns 
+  "mean" or "std" within the labels provided by the researchers.  Features related to "angle" measurements are excluded. 
 * The training and test data sets are combined. 
 * The activity descriptions (e.g. "WALKING", "SITTING") are appended to the data using the integer activity code (1,2,...,6) and the activity
   label mapping provided by the resarchers.  The integer version of activity is subsequently dropped from the data.
