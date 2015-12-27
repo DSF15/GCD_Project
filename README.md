@@ -4,13 +4,14 @@ As per the course website, *"The purpose of this project is to demonstrate your 
 
 ## Project Data
 
-The data is related to activity tracking from "wearable computing" and is available from the UCI Machine Learning Repository 
-[link](http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones) 
+The data is related to activity tracking from "wearable computing" and is available from the 
+[UCI Machine Learning Repository](http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones) 
 It was also made available through a link on the course project page (which is referenced in ```run_analysis.R```).
 
 ## Instructions (from the course website) 
 
-You should create one R script called run_analysis.R that does the following. 
+You should create one R script called ```run_analysis.R``` that does the following. 
+
 1. Merges the training and the test sets to create one data set.
 2. Extracts only the measurements on the mean and standard deviation for each measurement. 
 3. Uses descriptive activity names to name the activities in the data set
